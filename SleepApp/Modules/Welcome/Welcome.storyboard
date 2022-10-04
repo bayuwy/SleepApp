@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Welcome View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController id="Y6W-OH-hqX" customClass="WelcomeViewController" customModule="SleepApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_welcome" translatesAutoresizingMaskIntoConstraints="NO" id="TVO-2a-PTY">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img_meditation" translatesAutoresizingMaskIntoConstraints="NO" id="uy7-no-6kA">
+                                <rect key="frame" x="80.666666666666686" y="324" width="253" height="248"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="NLf-LM-ql2">
+                                <rect key="frame" x="116.66666666666667" y="153.66666666666666" width="180.66666666666663" height="72"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vDg-9p-DQn">
+                                        <rect key="frame" x="25.333333333333329" y="0.0" width="130" height="36"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="to Silent Moon" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OT8-Ts-6Y0">
+                                        <rect key="frame" x="0.0" y="36" width="180.66666666666666" height="36"/>
+                                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="30"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Explore the app, Find some peace of mind to prepare for meditation." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="81T-hv-fsv">
+                                <rect key="frame" x="40" y="245.66666666666666" width="334" height="38.333333333333343"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="16"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rs2-X8-ukH">
+                                <rect key="frame" x="20" y="794" width="374" height="48"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="2K2-Se-q7R"/>
+                                </constraints>
+                                <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="GET STARTED">
+                                    <fontDescription key="titleFontDescription" type="system" weight="medium" pointSize="14"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="startedButtonTapped:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="a5N-eX-k54"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" red="0.55686274509803924" green="0.59215686274509804" blue="0.99215686274509807" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="Rs2-X8-ukH" secondAttribute="trailing" constant="20" id="3di-GY-afy"/>
+                            <constraint firstItem="TVO-2a-PTY" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" id="4dQ-Hq-rpJ"/>
+                            <constraint firstItem="Rs2-X8-ukH" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="FTe-Wd-JLc"/>
+                            <constraint firstItem="NLf-LM-ql2" firstAttribute="top" relation="greaterThanOrEqual" secondItem="vDu-zF-Fre" secondAttribute="top" constant="20" id="Ga8-Aj-105"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="Rs2-X8-ukH" secondAttribute="bottom" constant="20" id="JkH-EJ-sAl"/>
+                            <constraint firstAttribute="bottom" secondItem="TVO-2a-PTY" secondAttribute="bottom" id="ZVP-X6-MTi"/>
+                            <constraint firstItem="uy7-no-6kA" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" priority="250" id="cJT-gZ-JAY"/>
+                            <constraint firstItem="81T-hv-fsv" firstAttribute="top" secondItem="NLf-LM-ql2" secondAttribute="bottom" constant="20" id="dU7-4n-Wbe"/>
+                            <constraint firstItem="TVO-2a-PTY" firstAttribute="leading" secondItem="5EZ-qb-Rvc" secondAttribute="leading" id="g1M-Cq-nNN"/>
+                            <constraint firstItem="81T-hv-fsv" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="40" id="gca-nL-zHJ"/>
+                            <constraint firstAttribute="trailing" secondItem="81T-hv-fsv" secondAttribute="trailing" constant="40" id="ikP-3A-aE9"/>
+                            <constraint firstItem="uy7-no-6kA" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="nHH-wY-1zR"/>
+                            <constraint firstAttribute="trailing" secondItem="TVO-2a-PTY" secondAttribute="trailing" id="vqH-63-pOB"/>
+                            <constraint firstItem="NLf-LM-ql2" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="y3r-DH-6Eb"/>
+                            <constraint firstItem="uy7-no-6kA" firstAttribute="top" secondItem="81T-hv-fsv" secondAttribute="bottom" constant="40" id="ywV-xm-24i"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="startedButton" destination="Rs2-X8-ukH" id="r5L-F0-J7A"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="127.69230769230769" y="3.5545023696682461"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="bg_welcome" width="452" height="978"/>
+        <image name="img_meditation" width="253" height="248"/>
+    </resources>
+</document>
