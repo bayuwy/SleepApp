@@ -87,6 +87,8 @@ extension HomeViewController: UICollectionViewDataSource {
                     cell.subtitleLabel.text = "MEDITATION"
                     cell.durationLabel.text = "5-10 MIN"
                     
+                    cell.delegate = self
+                    
                     return cell
                 }
                 else {
@@ -193,5 +195,14 @@ extension HomeViewController: UICollectionViewDelegateFlowLayout {
                 }
             }
         }
+    }
+}
+
+// MARK: - HomeItem1ViewCellDelegate
+extension HomeViewController: HomeItem1ViewCellDelegate {
+    func homeItem1ViewCellStartButtonTapped(_ cell: HomeItem1ViewCell) {
+        
+        presentPlayerViewController()
+//        showPlayerViewController()
     }
 }

@@ -18,6 +18,10 @@ class WelcomeViewController: UIViewController {
         setup()
     }
     
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
+    
     func setup() {
         startedButton.layer.cornerRadius = 24
         startedButton.layer.masksToBounds = true

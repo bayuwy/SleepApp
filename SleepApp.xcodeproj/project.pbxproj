@@ -16,6 +16,9 @@
 		3A8929A528E731D5007EB996 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A8929A428E731D5007EB996 /* WelcomeViewController.swift */; };
 		3A93A98228F058A400660603 /* RecomendedListViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A93A98128F058A400660603 /* RecomendedListViewCell.swift */; };
 		3A93A98428F05C2300660603 /* RecomendedViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A93A98328F05C2300660603 /* RecomendedViewCell.swift */; };
+		3AA7A95328F5A14D00C31066 /* Player.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3AA7A95228F5A14D00C31066 /* Player.storyboard */; };
+		3AA7A95528F5A16900C31066 /* PlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA7A95428F5A16900C31066 /* PlayerViewController.swift */; };
+		3AA7A95728F5B45500C31066 /* lovely-day.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3AA7A95628F5B45500C31066 /* lovely-day.mp3 */; };
 		3AE7EFA128EC6414000906AC /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AE7EFA028EC6414000906AC /* MainViewController.swift */; };
 		3AE7EFA328EC64A7000906AC /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AE7EFA228EC64A7000906AC /* HomeViewController.swift */; };
 		3AE7EFA628EC66F6000906AC /* UIColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AE7EFA528EC66F6000906AC /* UIColorExtensions.swift */; };
@@ -34,6 +37,9 @@
 		3A8929A428E731D5007EB996 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		3A93A98128F058A400660603 /* RecomendedListViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecomendedListViewCell.swift; sourceTree = "<group>"; };
 		3A93A98328F05C2300660603 /* RecomendedViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecomendedViewCell.swift; sourceTree = "<group>"; };
+		3AA7A95228F5A14D00C31066 /* Player.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Player.storyboard; sourceTree = "<group>"; };
+		3AA7A95428F5A16900C31066 /* PlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerViewController.swift; sourceTree = "<group>"; };
+		3AA7A95628F5B45500C31066 /* lovely-day.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "lovely-day.mp3"; sourceTree = "<group>"; };
 		3AE7EFA028EC6414000906AC /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		3AE7EFA228EC64A7000906AC /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		3AE7EFA528EC66F6000906AC /* UIColorExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtensions.swift; sourceTree = "<group>"; };
@@ -76,6 +82,7 @@
 				3A8929A328E72745007EB996 /* Views */,
 				3A8929A028E726CD007EB996 /* Modules */,
 				3A89299328E72228007EB996 /* Assets.xcassets */,
+				3AA7A95628F5B45500C31066 /* lovely-day.mp3 */,
 				3A89299528E72228007EB996 /* LaunchScreen.storyboard */,
 				3A89299828E72228007EB996 /* Info.plist */,
 			);
@@ -85,6 +92,7 @@
 		3A8929A028E726CD007EB996 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				3AA7A95128F5A13D00C31066 /* Player */,
 				3A8929A228E726F4007EB996 /* Main */,
 				3A8929A128E726E9007EB996 /* Welcome */,
 			);
@@ -118,6 +126,15 @@
 			children = (
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		3AA7A95128F5A13D00C31066 /* Player */ = {
+			isa = PBXGroup;
+			children = (
+				3AA7A95228F5A14D00C31066 /* Player.storyboard */,
+				3AA7A95428F5A16900C31066 /* PlayerViewController.swift */,
+			);
+			path = Player;
 			sourceTree = "<group>";
 		};
 		3AE7EFA428EC66E2000906AC /* Extensions */ = {
@@ -188,6 +205,8 @@
 			files = (
 				3A89299728E72228007EB996 /* LaunchScreen.storyboard in Resources */,
 				3A89299F28E726C6007EB996 /* Welcome.storyboard in Resources */,
+				3AA7A95728F5B45500C31066 /* lovely-day.mp3 in Resources */,
+				3AA7A95328F5A14D00C31066 /* Player.storyboard in Resources */,
 				3A89299428E72228007EB996 /* Assets.xcassets in Resources */,
 				3A89299228E72224007EB996 /* Main.storyboard in Resources */,
 			);
@@ -209,6 +228,7 @@
 				3A93A98428F05C2300660603 /* RecomendedViewCell.swift in Sources */,
 				3A89298D28E72224007EB996 /* SceneDelegate.swift in Sources */,
 				3AE7EFA128EC6414000906AC /* MainViewController.swift in Sources */,
+				3AA7A95528F5A16900C31066 /* PlayerViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -361,6 +381,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleLightContent;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -392,6 +413,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleLightContent;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (

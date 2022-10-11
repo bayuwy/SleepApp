@@ -3,6 +3,7 @@
     <device id="retina6_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -46,7 +47,7 @@
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rs2-X8-ukH">
                                 <rect key="frame" x="20" y="794" width="374" height="48"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" name="TabBarItemColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="48" id="2K2-Se-q7R"/>
                                 </constraints>
@@ -92,5 +93,8 @@
     <resources>
         <image name="bg_welcome" width="452" height="978"/>
         <image name="img_meditation" width="253" height="248"/>
+        <namedColor name="TabBarItemColor">
+            <color red="0.55686274509803924" green="0.59215686274509804" blue="0.99215686274509807" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
     </resources>
 </document>

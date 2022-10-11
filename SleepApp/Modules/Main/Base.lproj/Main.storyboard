@@ -134,6 +134,9 @@
                                                         <fontDescription key="titleFontDescription" type="system" weight="medium" pointSize="12"/>
                                                         <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     </buttonConfiguration>
+                                                    <connections>
+                                                        <action selector="startButtonTapped:" destination="h8a-Ka-wVS" eventType="touchUpInside" id="5Vo-w5-0aP"/>
+                                                    </connections>
                                                 </button>
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="meZ-qa-rW8">
                                                     <rect key="frame" x="24.000000000000007" y="24.666666666666671" width="99.666666666666686" height="39"/>
@@ -275,7 +278,7 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="ZKk-OZ-ZQv">
-                                            <rect key="frame" x="20" y="10.333333333333329" width="350" height="61.666666666666671"/>
+                                            <rect key="frame" x="20" y="10.333333333333332" width="350" height="61.666666666666671"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" tag="100" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Good Morning" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hGd-AC-7KO">
                                                     <rect key="frame" x="0.0" y="0.0" width="350" height="33.666666666666664"/>
